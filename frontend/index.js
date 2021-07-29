@@ -16,9 +16,9 @@ function createVisualisation() {
                 chart: {
                     type: "area",
                     foreColor: "#999",
-                    background: "#111",
-                    height: 400,
-                    width: 800,
+                    background: "#222",
+                    height: '400',
+                    width: '100%',
                     stacked: false,
                     dropShadow: {
                         enabled: true,
@@ -79,7 +79,7 @@ function createVisualisation() {
                 },
                 fill: {
                     type: "solid",
-                    fillOpacity: 0.7
+                    opacity: 0.8
                 }
             };
 

@@ -11,12 +11,28 @@ html {
 
 body {
     height: 100%;
+    overflow: overlay;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+    background-color: #444;
+    border-bottom: 1px solid white;
+}
+
+.footer-item span {
+    font-size: 1.5vw;
+    color: white;
 }
 
 .top-half {
@@ -33,9 +49,15 @@ body {
 }
 
 .flex-item {
-    min-height: 300px;
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
-    background-color: #444;
+    min-height: 70%;
+    background-size: cover;
+    background-position: top;
     border-bottom: 1px solid white;
 }
 
@@ -76,22 +98,18 @@ body {
 }
 
 .second {
-    padding: 0px 30px 0px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    min-height: 70%;
     background-image: url("images/sunset.jpg");
-    background-size: cover;
-    background-position: top;
-    border-bottom: 1px solid white;
+}
+
+.third {
+    background-image: url("images/effects.jpg");
+}
+
+.fourth {
+    background-image: url("images/europes.jpg");
 }
 
 .chart-wrapper {
-    width: 50%;
-    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,13 +123,8 @@ body {
 .gradient-border {
     border-radius: 10px;
     border-width: 3px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      red, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
+    border-style: solid;
+    border-image: linear-gradient( to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 .text-wrapper {
@@ -139,6 +152,7 @@ body {
 
 .text-wrapper p {
     color: white;
+    font-size: 1.2vw;
 }
 
 .seperator {
@@ -147,4 +161,33 @@ body {
     height: 2px;
     background-image: linear-gradient(to right, #00E396, #0090FF);
     border-radius: 20px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #111;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

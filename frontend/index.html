@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://unpkg.com/papaparse@5.3.1/papaparse.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 </head>
 
 <body>
@@ -15,38 +16,74 @@
 
         <div class="top-half">
             <div class="flex-title">
-                <div class="nav-option">Home</div>
-                <div class="nav-option">Menu</div>
+                <a class="nav-option" href="index.html">Home</a>
                 <div class="title">
                     Effects of Colonialism
                 </div>
-                <div class="nav-option">Login</div>
-                <div class="nav-option">About</div>
+                <a class="nav-option" href="about.html">About</a>
             </div>
         </div>
 
-        <div class="second">
+        <div class="flex-item second">
 
             <div class="text-wrapper">
                 <span>Broad Money Growth</span>
                 <div class="seperator"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nisi ipsum. Sed eu tincidunt est, in placerat mi. Donec eu nibh non arcu sagittis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla ornare blandit massa, ac congue nibh placerat at. Nam sed efficitur lectus. Proin accumsan mollis euismod. Mauris ante diam, imperdiet vitae lectus et, congue pharetra felis. Pellentesque luctus maximus elit sed faucibus. Nullam in ullamcorper magna. Mauris varius egestas urna in lobortis. Sed laoreet rhoncus pharetra.<br><br>Sed lacinia enim lectus, at dapibus dui fringilla eget. Pellentesque dapibus ultricies sem sit amet cursus. Donec vel turpis vestibulum, ultricies odio et, commodo nunc. Cras quis iaculis odio. Vestibulum in purus in ex laoreet blandit. Aenean blandit massa mi, consectetur volutpat velit pellentesque eget. Cras rhoncus sit amet urna efficitur pulvinar. Donec tempus lorem purus, eu dapibus risus convallis ut.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nisi ipsum. Sed eu tincidunt est, in placerat mi. Donec eu nibh non arcu sagittis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                    curae; Nulla ornare blandit massa, ac congue nibh placerat at. Nam sed efficitur lectus. Proin accumsan mollis euismod. Mauris ante diam, imperdiet vitae lectus et, congue pharetra felis. Pellentesque luctus maximus elit sed faucibus.
+                    Nullam in ullamcorper magna. Mauris varius egestas urna in lobortis. Sed laoreet rhoncus pharetra.<br><br>Sed lacinia enim lectus, at dapibus dui fringilla eget. Pellentesque dapibus ultricies sem sit amet cursus. Donec vel turpis
+                    vestibulum, ultricies odio et, commodo nunc. Cras quis iaculis odio. Vestibulum in purus in ex laoreet blandit. Aenean blandit massa mi, consectetur volutpat velit pellentesque eget. Cras rhoncus sit amet urna efficitur pulvinar. Donec
+                    tempus lorem purus, eu dapibus risus convallis ut.</p>
             </div>
             <div class="chart-wrapper">
                 <div class="chart-title">
-                    Algeria vs Australia | Broad Money Growth
+                    Broad Money Growth % | 1975 - 2018
                 </div>
                 <div id="broad_money_growth_chart"></div>
             </div>
 
         </div>
 
-        <div class="flex-item">
+        <div class="flex-item third">
+            <div class="chart-wrapper" style="margin-right: 20px;">
+                <div class="chart-title">
+                    Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total) | 2015
+                </div>
+                <div id="cause_of_death_chart"></div>
+            </div>
 
+            <div class="text-wrapper">
+                <span>Cause of Death</span>
+                <div class="seperator"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nisi ipsum. Sed eu tincidunt est, in placerat mi. Donec eu nibh non arcu sagittis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                    curae; Nulla ornare blandit massa, ac congue nibh placerat at. Nam sed efficitur lectus. Proin accumsan mollis euismod. Mauris ante diam, imperdiet vitae lectus et, congue pharetra felis. Pellentesque luctus maximus elit sed faucibus.
+                    Nullam in ullamcorper magna. Mauris varius egestas urna in lobortis. Sed laoreet rhoncus pharetra.<br><br>Sed lacinia enim lectus, at dapibus dui fringilla eget. Pellentesque dapibus ultricies sem sit amet cursus. Donec vel turpis
+                    vestibulum, ultricies odio et, commodo nunc. Cras quis iaculis odio. Vestibulum in purus in ex laoreet blandit. Aenean blandit massa mi, consectetur volutpat velit pellentesque eget. Cras rhoncus sit amet urna efficitur pulvinar. Donec
+                    tempus lorem purus, eu dapibus risus convallis ut.</p>
+            </div>
         </div>
 
-        <div class="flex-item">
+        <div class="flex-item fourth">
+            <div class="text-wrapper">
+                <span>GDP Growth</span>
+                <div class="seperator"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nisi ipsum. Sed eu tincidunt est, in placerat mi. Donec eu nibh non arcu sagittis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                    curae; Nulla ornare blandit massa, ac congue nibh placerat at. Nam sed efficitur lectus. Proin accumsan mollis euismod. Mauris ante diam, imperdiet vitae lectus et, congue pharetra felis. Pellentesque luctus maximus elit sed faucibus.
+                    Nullam in ullamcorper magna. Mauris varius egestas urna in lobortis. Sed laoreet rhoncus pharetra.<br><br>Sed lacinia enim lectus, at dapibus dui fringilla eget. Pellentesque dapibus ultricies sem sit amet cursus. Donec vel turpis
+                    vestibulum, ultricies odio et, commodo nunc. Cras quis iaculis odio. Vestibulum in purus in ex laoreet blandit. Aenean blandit massa mi, consectetur volutpat velit pellentesque eget. Cras rhoncus sit amet urna efficitur pulvinar. Donec
+                    tempus lorem purus, eu dapibus risus convallis ut.</p>
+            </div>
 
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    GDP growth annual in % | 1975 - 2018
+                </div>
+                <div id="gdp_growth_chart"></div>
+            </div>
+        </div>
+
+        <div class="footer-item">
+            <span>Website by Daniel Paolone @ 2021 | For Billy Demarco | Software Development</span>
         </div>
     </div>
 

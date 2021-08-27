@@ -1,7 +1,6 @@
 createVisualisations()
 
 function createVisualisations() {
-    loadLocal()
 
     Papa.parse('data/gdp_growth.csv', {
         header: true,
@@ -9,7 +8,6 @@ function createVisualisations() {
         dynamicTyping: true,
         complete: function(results) {
             console.log(results);
-
 
             var options = {
                 chart: {
@@ -278,9 +276,4 @@ function createVisualisations() {
             }
         }
     });
-}
-
-function loadLocal() {
-
-
 }
